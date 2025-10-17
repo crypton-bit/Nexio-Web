@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexio Web | Criação de Landing Pages Profissionais</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="Logo Nexio Web" />
+    <h1>Nexio Web</h1>
+    <p>Criação de Landing Pages Profissionais em até 5 dias</p>
+  </header>
+
+  <section class="about">
+    <h2>Quem Somos</h2>
+    <p>
+      A <strong>Nexio Web</strong> cria landing pages sob medida, desenvolvidas para gerar resultados reais.
+      Combinamos design moderno, performance e estratégia digital para transformar visitantes em clientes.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Landing Page Profissional</h3>
+        <p>Desenvolvimento 100% personalizado, responsivo e otimizado para conversão.</p>
+      </div>
+      <div class="card">
+        <h3>Prazo de 5 Dias</h3>
+        <p>Entrega rápida, sem perder a qualidade e atenção aos detalhes.</p>
+      </div>
+      <div class="card">
+        <h3>Investimento</h3>
+        <p>Valor único de <strong>R$ 550,00</strong> com design premium e suporte incluso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item" >
+        <a href="https://landepage-clinica.vercel.app/" target="_blank">
+        <img src="img/land-clinica-DL.png" alt="Exemplo de projeto" />
+        </a>
+        <h4>Landing Page para Clinca</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio2.jpg" alt="Exemplo de projeto" />
+        <h4>Site Institucional Moderno</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio3.jpg" alt="Exemplo de projeto" />
+        <h4>Landing Page para Negócio Local</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Depoimentos</h2>
+    <div class="testimonial">
+      “A Nexio Web entregou minha landing page muito antes do prazo. O resultado ficou incrível e já estou recebendo mais clientes!”
+      <strong>— Lucas Andrade</strong>
+    </div>
+    <div class="testimonial">
+      “Atendimento excelente, profissionalismo e design impecável. Recomendo de olhos fechados.”
+      <strong>— Ana Souza</strong>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Fale Conosco</h2>
+    <form action="https://formsubmit.co/nexioswebs@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">
+      📞 <strong>(71) 9 8110-2960</strong> <br>
+      💬 <a href="https://w.app/nexioweb" target="_blank" style="color:#007bff;">Fale no WhatsApp</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Nexio Web - Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Animação de aparição ao rolar
+    const sections = document.querySelectorAll("section");
+    const revealSections = () => {
+      sections.forEach((sec) => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+  </script>
+</body>
+</html>

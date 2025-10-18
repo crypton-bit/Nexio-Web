@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Vendas Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+        body {line-height: 1.6; color: #333;}
+        a {text-decoration: none;}
+        header {background: #0d6efd; color: white; padding: 80px 20px; text-align: center;}
+        header h1 {font-size: 2.5rem; margin-bottom: 20px;}
+        header p {font-size: 1.2rem; margin-bottom: 30px;}
+        .btn {background: #ffc107; color: #333; padding: 15px 25px; font-weight: bold; border-radius: 5px; transition: 0.3s;}
+        .btn:hover {background: #e0a800; color: #fff;}
+        section {padding: 60px 20px; max-width: 1100px; margin: auto;}
+        .section-title {font-size: 2rem; margin-bottom: 20px; text-align: center; color: #0d6efd;}
+        .section-content {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;}
+        .content-card {flex: 1 1 45%; background: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+        .content-card h3 {color: #0d6efd; margin-bottom: 15px;}
+        .content-card ul {list-style: none; padding-left: 0;}
+        .content-card ul li {margin-bottom: 10px; position: relative; padding-left: 20px;}
+        .content-card ul li::before {content: "✓"; position: absolute; left: 0; color: #28a745; font-weight: bold;}
+        footer {background: #343a40; color: #fff; text-align: center; padding: 40px 20px;}
+        @media(max-width:768px) {
+            .section-content {flex-direction: column;}
+            .content-card {flex: 1 1 100%;}
+        }
+        /* Sticky CTA */
+        .sticky-cta {position: fixed; bottom: 20px; right: 20px; z-index: 999;}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Enquanto você dorme, seu site vende</h1>
+        <p>Transforme seu negócio físico em uma máquina digital de clientes e vendas automáticas</p>
+        <a class="btn" href="https://wa.me/71981102960" target="_blank">Quero meu vendedor digital agora</a>
+    </header>
+
+    <!-- Problema -->
+    <section id="problema">
+        <h2 class="section-title">Você ainda depende do boca a boca para vender?</h2>
+        <p style="text-align:center; max-width:800px; margin:auto; margin-bottom:30px;">
+            Enquanto você espera que clientes liguem ou apareçam no escritório, seus concorrentes já estão captando leads no digital.  
+            Não é falta de clientes — é falta de um canal digital que realmente converta.
+        </p>
+        <div class="section-content">
+            <div class="content-card">
+                <h3>Como você se sente</h3>
+                <ul>
+                    <li>Perdendo oportunidades diariamente</li>
+                    <li>Dependendo da sorte para vender</li>
+                    <li>Sem controle sobre leads e clientes</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>Como poderia ser</h3>
+                <ul>
+                    <li>Clientes chegando direto no WhatsApp</li>
+                    <li>Leads qualificados diariamente</li>
+                    <li>Vendas acontecendo automaticamente</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução / Benefícios -->
+    <section id="solucao">
+        <h2 class="section-title">Seu site não é só um cartão de visita — é seu melhor vendedor</h2>
+        <div class="section-content">
+            <div class="content-card">
+                <ul>
+                    <li>Mais leads qualificados todos os dias</li>
+                    <li>Conexão direta com clientes via WhatsApp</li>
+                    <li>Apresentação profissional de produtos e serviços</li>
+                    <li>Vendedor digital 24h, sem pausa</li>
+                    <li>Aumento de conversões e vendas sem esforço extra</li>
+                </ul>
+                <a class="btn" href="https://wa.me/71981102960" target="_blank" style="margin-top:20px; display:inline-block;">Quero meu vendedor digital agora</a>
+            </div>
+            <div class="content-card">
+                <img src="img/land-clinica-DL.png" alt="Exemplo de Landing Page" style="width:100%; border-radius:8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova / Autoridade -->
+    <section id="prova">
+        <h2 class="section-title">Não é mágica — é método</h2>
+        <p style="text-align:center; max-width:800px; margin:auto; margin-bottom:30px;">
+            Trabalhamos com técnicas de marketing e design baseadas em dados e comportamento do consumidor.  
+            Resultados reais: clientes que receberam até 3x mais contatos em poucas semanas.
+        </p>
+        <div class="section-content">
+            <div class="content-card">
+                <img src="https://via.placeholder.com/400x300" alt="Exemplo de resultados" style="width:100%; border-radius:8px;">
+            </div>
+            <div class="content-card">
+                <h3>Depoimentos</h3>
+                <ul>
+                    <li>"Meu fluxo de leads dobrou em apenas 2 semanas!" – Cliente A</li>
+                    <li>"Agora eu posso focar em fechar negócios, não em procurar clientes." – Cliente B</li>
+                    <li>"O site realmente trabalha sozinho, incrível!" – Cliente C</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona">
+        <h2 class="section-title">Como funciona</h2>
+        <div class="section-content">
+            <div class="content-card">
+                <h3>1️⃣ Análise do seu negócio</h3>
+                <p>Estudamos seus produtos e público para criar uma estratégia certeira.</p>
+            </div>
+            <div class="content-card">
+                <h3>2️⃣ Criação da página</h3>
+                <p>Landing page ou site estratégico com design persuasivo e foco em conversão.</p>
+            </div>
+            <div class="content-card">
+                <h3>3️⃣ Conexão com WhatsApp</h3>
+                <p>Todos os leads chegam direto para você, prontos para fechar negócio.</p>
+            </div>
+            <div class="content-card">
+                <h3>4️⃣ Ajustes e monitoramento</h3>
+                <p>O site é otimizado constantemente para gerar mais leads e vendas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objeções / Confiança -->
+    <section id="confianca">
+        <h2 class="section-title">E se eu não gostar?</h2>
+        <p style="text-align:center; max-width:800px; margin:auto; margin-bottom:30px;">
+            Cada página é personalizada para seu negócio. Ajustamos até que você veja resultados.  
+            Não é gasto, é investimento que gera retorno real.
+        </p>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="cta-final" style="text-align:center; background:#0d6efd; color:white; padding:80px 20px;">
+        <h2 style="font-size:2rem; margin-bottom:20px;">Deixe seu site vender por você</h2>
+        <a class="btn" href="https://wa.me/SEUNUMERODEWHATSAPP" target="_blank">Quero meu vendedor digital agora</a>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a class="btn" href="https://wa.me/SEUNUMERODEWHATSAPP" target="_blank">Quero meu vendedor digital agora</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Sua Empresa | Todos os direitos reservados
+    </footer>
+
+    <script>
+        // Smooth scroll para links internos (opcional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+            });
+        });
+    </script>
+</body>
+</html>

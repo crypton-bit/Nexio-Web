@@ -222,3 +222,46 @@
         padding: 60px 20px;
       }
     }
+
+     /* Seção do carrossel infinito */
+    .empresas {
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      padding: 60px 0;
+    }
+
+    .empresas h3 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0d1b2a;
+    }
+
+    .logos {
+      display: flex;
+      width: calc(200px * 10);
+      animation: scroll 20s linear infinite;
+    }
+
+    .logos img {
+      width: 180px;
+      height: 100px;
+      margin: 0 20px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .logos img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
